@@ -1,6 +1,6 @@
 # hackaton-sport
 
-# Userdocumentatie
+Userdocumentatie
 
 ________________________________________________________________________________________
 1. Login
@@ -12,7 +12,6 @@ Je wordt automatisch ingelogd en doorgestuurd naar het dashboard.
 
 2. Dashboard
 Op het dashboard zie je een overzicht van je huidige abonnement en cursussen:
-
 Mijn Abonnement: Hier kun je je abonnement instellen of wijzigen.
 Mijn Cursussen: Hier kun je cursussen selecteren en start- en einddatums opgeven.
 Uitloggen: Hiermee kun je uitloggen en terugkeren naar de loginpagina.
@@ -33,25 +32,39 @@ Klik op "Opslaan" om je cursuskeuze op te slaan.
 
 5. Uitloggen
 Klik op "Uitloggen" om je sessie te beëindigen en terug te keren naar de loginpagina.
-_______________________________________________________________________________________|
+____________________________________________________________________________________________________
 
-# Systeem documentatie
+Systeem documentatie
 
 
-1. Project structuur
+1.Project structuur
+
 /hackaton-sport 
-    ├── css/
-    ├── index.php
-    ├── abonnement.php
-    ├── cursussen.php
-    ├── login.php
-    ├── logout.php
-    └──  README.md
+   
+ ├── css/
+
+├── index.php
+
+├── abonnement.php
+ 
+├── cursussen.php
+ 
+├── login.php
+ 
+├── logout.php
+ 
+└──  README.md
+
 css/: Bevat de CSS-bestand voor de opmaak van de applicatie.
+
 index.php: De dashboardpagina die alleen toegankelijk is na inloggen.
+
 abonnement.php: Pagina waar gebruikers hun abonnement kunnen beheren.
+
 cursussen.php: Pagina waar gebruikers hun cursussen kunnen selecteren en start- en einddatums kunnen invoeren.
+
 login.php: Inlogpagina voor het systeem.
+
 logout.php: Verwerkt het uitlogproces door de sessie te beëindigen.
 
 
@@ -68,15 +81,16 @@ Open de applicatie in een webbrowser:
 http://localhost/hackaton-sport/login.php
 
 
-3. Sessiebeheer
+3.Sessiebeheer
 Het systeem gebruikt PHP-sessies om te controleren of een gebruiker is ingelogd. Wanneer een gebruiker inlogt, wordt de variabele $_SESSION['loggedin'] ingesteld op true. Pagina's zoals index.php, abonnement.php, en cursussen.php controleren eerst of deze sessievariabele aanwezig is. Als dat niet zo is, wordt de gebruiker teruggestuurd naar de loginpagina.
 
 
-4. Belangrijkste functies en pagina's
+
+4.Belangrijkste functies en pagina's
 login.php: Verwerkt het inloggen van gebruikers.
 index.php: Het dashboard dat alleen toegankelijk is voor ingelogde gebruikers.
 abonnement.php: Pagina om het gebruikersabonnement te selecteren en te beheren.
 cursussen.php: Pagina waar gebruikers hun cursussen kunnen selecteren en datums kunnen invoeren.
 logout.php: Verwerkt het uitlogproces door de sessie te vernietigen.
-
+____________________________________________________________________________________________________________________________________________________________
 
