@@ -67,6 +67,7 @@ function getEndDate($courseName) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cursussen</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <h2>Kies je cursussen en geef start- en einddatum op</h2>
